@@ -25,4 +25,7 @@ test:
 
 production:
   <<: *default
+  host: localhost
+  password:
+  url: <%= ENV['DATABASE_URL'] %>
   database: jod_production

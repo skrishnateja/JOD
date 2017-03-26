@@ -26,6 +26,6 @@ test:
 production:
   <<: *default
   host: localhost
-  password:
+  encoding: unicode
   url: <%= ENV['DATABASE_URL'] %>
   database: jod_production

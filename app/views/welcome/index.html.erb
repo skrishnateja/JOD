@@ -2,3 +2,13 @@
 <p>
   The time is now: <%= Time.now %>
 </p>
+
+<%= render :partial => "sessions/new" %>
+
+<% if !@submissions.blank? %>
+	<% for item in @submissions %>
+		<li><%= item.name %></li>
+	<% end %>
+<% else %>
+	
+<% end %>
